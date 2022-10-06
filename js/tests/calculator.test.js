@@ -66,6 +66,39 @@ describe('Subtract tests', () => {
   });
 });
 
+describe('Multiply tests', () => {
+  test('10 * 2 should be 20', () => {
+    // Arrange
+    const a = 10;
+    const b = 2;
+
+    // Act
+    const result1 = Calculator.multiply(a, b);
+
+    expect(result1).toEqual(20);
+  });
+  test('20 * 10 should be 200', () => {
+    // Arrange
+    const a = 20;
+    const b = 10;
+
+    // Act
+    const result1 = Calculator.multiply(a, b);
+
+    expect(result1).toEqual(200);
+  });
+  test('10 * 10 should be 1', () => {
+    // Arrange
+    const a = 10;
+    const b = 10;
+
+    // Act
+    const result1 = Calculator.multiply(a, b);
+
+    expect(result1).toEqual(100);
+  });
+});
+
 describe('Divide tests', () => {
   test('10 / 2 should be 5', () => {
     // Arrange
